@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Products – Game Shack</title>
+  
+  <link rel="stylesheet" href="../css/product.css" />
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-logo">Game Shack</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="Cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="index.html#about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main product content -->
+  <main class="products-main">
+    <h1>Gaming Products</h1>
+    <p class="subtitle">High-performance laptops, powerful desktops, and the latest video games—all in one place.</p>
+
+    <!-- Flexbox product grid -->
+    <div class="product-grid">
+      <!-- Product 1: Gaming Laptop -->
+      <div class="product-card">
+        <img src="imgss/prod1.jpg" alt="ASUS ROG Strix G16 (2025) Gaming Laptop" />
+        <h3>ASUS ROG Strix G16 (2025)</h3>
+        <p>16” FHD+ 165Hz Display, NVIDIA® RTX™ 5060, Intel® Core™ i7, 16GB DDR5, 1TB SSD</p>
+        <p class="price">$1,499.99</p>
+        <button class="add-to-cart-btn" data-name="ASUS ROG Strix G16 (2025)" data-price="1499.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 2: Gaming Desktop -->
+      <div class="product-card">
+        <img src="imgss/prod2.jpg" alt="Micro and Mid Tower Gaming Desktop" />
+        <h3>Micro & Mid Tower Gaming Desktop</h3>
+        <p>Up to AMD Ryzen 9 9950X3D, NVIDIA GeForce RTX 5090, 256GB RAM, Liquid Cooling</p>
+        <p class="price">$679.00</p>
+        <button class="add-to-cart-btn" data-name="Micro and Mid Tower Gaming Desktop" data-price="679.00">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 3: Video Game -->
+      <div class="product-card">
+        <img src="imgss/prod3.webp" alt="Elden Ring (2022) Video Game" />
+        <h3>Elden Ring (2022)</h3>
+        <p>Action RPG • PC • Digital Download</p>
+        <p class="price">$59.99</p>
+        <button class="add-to-cart-btn" data-name="Elden Ring (2022)" data-price="59.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 4: Video Game -->
+      <div class="product-card">
+        <img src="imgss/prod4.jpg" alt="Bloodborne (2015) Video Game" />
+        <h3>Bloodborne (2015)</h3>
+        <p>Action RPG • Console • Digital Download</p>
+        <p class="price">$19.99</p>
+        <button class="add-to-cart-btn" data-name="Bloodborne (2015)" data-price="19.99">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 5: Gaming Laptop -->
+      <div class="product-card">
+        <img src="imgss/prod5.jpg" alt="HP Victus 15 Gaming Laptop" />
+        <h3>HP Victus 15</h3>
+        <p>15.6” FHD 144Hz, AMD Ryzen 5 7535HS, 16GB DDR5, 512GB SSD, NVIDIA RTX 2050</p>
+        <p class="price">$759.99</p>
+        <button class="add-to-cart-btn" data-name="HP Victus 15" data-price="759.99">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
+  <!-- Product Javascript -->
+  <script src="../javascript/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cart - Game Shack</title>
+  <link rel="stylesheet" href="Cart.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-logo">Game Shack</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="Cart.html" class="active">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="index.html#about">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Cart Content -->
+  <main class="cart-main">
+    <h1>Your Shopping Cart</h1>
+
+    <!-- Cart Table -->
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Items loaded via JavaScript -->
+      </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td colspan="3">Subtotal:</td>
+          <td id="subtotal">$0.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3">Tax (13%):</td>
+          <td id="tax">$0.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3"><strong>Total:</strong></td>
+          <td id="total"><strong>$0.00</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Required Buttons -->
+    <div class="btn-group">
+      <button id="clear-cart" class="btn btn-clear">Clear All</button>
+      <a href="checkout.html" class="btn btn-checkout">Check Out</a>
+      <a href="products.html" class="btn btn-close">Close</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="copyright">&copy; 2025 Game Shack. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html#about" class="footer-link">About Us</a>
+        <a href="mailto:2407741@utech.edu.jm" class="footer-link">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cart JavaScript -->
+  <script src="Cart.js"></script>
+</body>
+</html>

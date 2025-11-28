@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Login - Game Shack</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="loginpage.css" />
+</head>
+<body>
+  <!-- Semantic header with navigation -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-logo">Game Shack</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="Cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="index.html#about">About Us</a>
+        <a href="signup.html">Sign Up</a>
+        <!-- No "Login" link on Login page -->
+      </nav>
+    </div>
+  </header>
+
+  <!--Main login form -->
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2>Log In to Your Account</h2>
+      <form id="login-form" novalidate>
+        <div class="input-group">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" name="username" required />
+        </div>
+
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" required />
+        </div>
+
+        <button type="submit" class="auth-btn">Log In</button>
+
+        <p class="toggle-link">
+          Don't have an account? <a href="signup.html">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <!--Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="copyright">&copy; 2025 Game Shack. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html#about" class="footer-link">About Us</a>
+        <a href="mailto:2407741@utech.edu.jm" class="footer-link">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Login JavaScript -->
+  <script src="loginj.js"></script>
+</body>
+</html>
